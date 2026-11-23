@@ -21,6 +21,14 @@ public class Calculadora {
         }
         return a / b;
     }
+    
+    public static double potencia(double base, int exponente) {
+        return Math.pow(base, exponente);
+    }
+    
+    public static boolean esPar(int numero) {
+        return numero % 2 == 0;
+    }
 
     public static void main(String[] args) {
         System.out.println("Calculadora GitHub");
@@ -29,5 +37,8 @@ public class Calculadora {
         System.out.println("Multiplicación: " + multiplicar(8, 4));
         System.out.println("División: " + dividir(8, 4));
         System.out.println("División por cero: " + dividir(8, 0));
+        System.out.println("Potencia: " + potencia(2, 3));
+        System.out.println("Es par (4): " + esPar(4));
+        System.out.println("Es par (7): " + esPar(7));
     }
 }
